@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDD8D8"
+    android:orientation="vertical"
+    tools:context=".detalle_tarea">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="#2196F3"
+        android:text="@string/task"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                android:id="@+id/detalleT_lbl_workOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orden de trabajo N°:"
+                android:textSize="13sp"></TextView>
+
+            <TextView
+                android:id="@+id/detalleT_workOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/detalleT_lbl_workOrder"
+                android:background="#8BC34A"
+                android:hint="123456789"
+                android:paddingHorizontal="3dp"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/detalleT_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detalleT_workOrder"
+                android:layout_marginTop="5dp"
+                android:hint="Titulo de la tarea puede ser más largo"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/detalleT_title"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="6dp"
+                android:hint="Plomería"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/detalleT_criticality"
+                android:hint="Fraccionamiento"
+                android:textSize="13sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/detalleT_criticality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#7EAEE8"
+                android:paddingHorizontal="3dp"
+                android:text="@string/low_priority"
+                android:textColor="#0146FB"
+                android:textSize="13sp"
+                android:textStyle="bold"></TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción completa de la tarea"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Comenzar"
+                android:textAlignment="center"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pausar"
+                android:textAlignment="center"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancelar"
+                android:textAlignment="center"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Finalizar"
+                android:textAlignment="center"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="#2196F3"
+        android:text="@string/times"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/detalleT_img_totalT"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@id/detalleT_lbl_totalT"
+            android:src="@drawable/clock"></ImageView>
+
+        <TextView
+            android:id="@+id/detalleT_lbl_totalT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/detalleT_img_totalT"
+            android:text="@string/total_time"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_totalT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/detalleT_lbl_totalT"
+            android:hint="00:00"></TextView>
+
+        <ImageView
+            android:id="@+id/detalleT_img_workT"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@id/detalleT_lbl_workT"
+            android:src="@drawable/clock"></ImageView>
+
+        <TextView
+            android:id="@+id/detalleT_lbl_workT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detalleT_lbl_totalT"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/detalleT_img_workT"
+            android:text="@string/workTime"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_workT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/detalleT_lbl_workT"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/detalleT_lbl_workT"
+            android:hint="00:00"></TextView>
+
+        <ImageView
+            android:id="@+id/detalleT_img_myT"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@id/detalleT_lbl_myT"
+            android:src="@drawable/clock"></ImageView>
+
+        <TextView
+            android:id="@+id/detalleT_lbl_myT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detalleT_lbl_workT"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/detalleT_img_myT"
+            android:text="@string/myTime"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_myT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/detalleT_lbl_myT"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/detalleT_lbl_myT"
+            android:hint="00:00"></TextView>
+
+        <ImageView
+            android:id="@+id/detalleT_img_pauseT"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@id/detalleT_lbl_pauseT"
+            android:src="@drawable/clock"></ImageView>
+
+        <TextView
+            android:id="@+id/detalleT_lbl_pauseT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detalleT_lbl_myT"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/detalleT_img_pauseT"
+            android:text="@string/pause_Time"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_pauseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/detalleT_lbl_pauseT"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/detalleT_lbl_pauseT"
+            android:hint="00:00"></TextView>
+
+        <ImageView
+            android:id="@+id/detalleT_img_estimatedT"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@id/detalleT_lbl_estimatedT"
+            android:src="@drawable/clock"></ImageView>
+
+        <TextView
+            android:id="@+id/detalleT_lbl_estimatedT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detalleT_lbl_pauseT"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/detalleT_img_estimatedT"
+            android:text="Tiempo Estimado:"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_estimatedT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/detalleT_lbl_estimatedT"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/detalleT_lbl_estimatedT"
+            android:hint="00:00"></TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="#2196F3"
+        android:text="@string/asset"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/eq7fbe15"></ImageView>
+
+        <TextView
+            android:id="@+id/detalleT_lbl_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brand"
+            android:textSize="13sp"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/detalleT_lbl_brand"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/detalleT_lbl_brand"
+            android:hint="Toyota"
+            android:textSize="13sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_lbl_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detalleT_lbl_brand"
+            android:text="@string/model"
+            android:textSize="13sp"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/detalleT_lbl_model"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/detalleT_lbl_model"
+            android:hint="6FBRE15"
+            android:textSize="13sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_lbl_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detalleT_lbl_model"
+            android:text="@string/type"
+            android:textSize="13sp"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/detalleT_lbl_type"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/detalleT_lbl_type"
+            android:hint="Autoelevador"
+            android:textSize="13sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_lbl_supply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detalleT_lbl_type"
+            android:text="@string/supply"
+            android:textSize="13sp"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_supply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/detalleT_lbl_supply"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/detalleT_lbl_supply"
+            android:hint="Electrica"
+            android:textSize="13sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_lbl_voltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detalleT_lbl_supply"
+            android:text="@string/voltage"
+            android:textSize="13sp"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_voltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/detalleT_lbl_voltage"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/detalleT_lbl_voltage"
+            android:hint="48v"
+            android:textSize="13sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_lbl_chasisSerial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detalleT_lbl_voltage"
+            android:text="@string/chasisSerial"
+            android:textSize="13sp"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_chasisSerial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/detalleT_lbl_chasisSerial"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/detalleT_lbl_chasisSerial"
+            android:hint="2377f8df8845hhg"
+            android:textSize="13sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_lbl_motorSerial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detalleT_lbl_chasisSerial"
+            android:text="@string/motorSerial"
+            android:textSize="13sp"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_motorSerial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/detalleT_lbl_motorSerial"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/detalleT_lbl_motorSerial"
+            android:hint="4345JJHGHG456J"
+            android:textSize="13sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detalleT_lbl_motorSerial"
+            android:background="#F44336"
+            android:paddingHorizontal="6dp"
+            android:text="Fuera de Servicio"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="#2196F3"
+        android:text="@string/supplies"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/detalleT_btn_requestSupplies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="#8BC34A"
+            android:paddingVertical="3dp"
+            android:text="@string/requestMaterials"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/detalleT_btn_addSupplies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="#3F51B5"
+            android:paddingVertical="3dp"
+            android:text="@string/usedMaterials"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    tools:context=".item_lista">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_marginVertical="5dp">
+
+        <TextView
+            android:id="@+id/item_lista_btn_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/textview_redondeado"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:text="@string/action"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/item_lista_txt_criticality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="#7EAEE8"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:text="@string/low_priority"
+            android:textColor="#0146FB"
+            android:textSize="13sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/item_lista_txt_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/item_lista_txt_criticality"
+            android:background="#DCE8F6"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="2dp"
+            android:text="10"
+            android:textColor="#0146FB"
+            android:textSize="13sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/item_lista_txt_workOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:hint="#123456789"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/item_lista_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_lista_btn_action"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="14dp"
+            android:hint="Titulo de la tarea puede ser más largo"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:id="@+id/item_lista_img_location"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@id/item_lista_txt_title"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/location"></ImageView>
+
+        <TextView
+            android:id="@+id/item_lista_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_lista_img_location"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_lista_img_location"
+            android:hint="Euler"
+            android:textSize="14sp"></TextView>
+
+        <ImageView
+            android:id="@+id/item_lista_img_forklift"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@id/item_lista_img_location"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/forklift"></ImageView>
+
+        <TextView
+            android:id="@+id/item_lista_forklift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_lista_img_forklift"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_lista_img_forklift"
+            android:hint="EQ204"
+            android:textSize="14sp"></TextView>
+
+        <ImageView
+            android:id="@+id/item_lista_img_person"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@id/item_lista_img_forklift"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/person"></ImageView>
+
+        <TextView
+            android:id="@+id/item_lista_txt_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/item_lista_img_person"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_lista_img_person"
+            android:hint="Esteban Terlecki"
+            android:textSize="14sp"></TextView>
+    </RelativeLayout>
+</LinearLayout>

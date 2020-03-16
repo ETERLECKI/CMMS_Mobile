@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Mantenimiento2020</string>
+    <string name="action">Abrir</string>
+    <string name="low_priority">Baja</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total_time">Tiempo Total:</string>
+    <string name="myTime">Mi Tiempo:</string>
+    <string name="pause_Time">Tiempo espera:</string>
+    <string name="workTime">Tiempo de Tarea:</string>
+    <string name="supplies">Materiales</string>
+    <string name="times">Tiempos</string>
+    <string name="checklists">Verificaciones</string>
+    <string name="asset">Equipo</string>
+    <string name="task">Tarea</string>
+    <string name="brand">Marca:</string>
+    <string name="model">Modelo:</string>
+    <string name="type">Tipo:</string>
+    <string name="supply">Alimentación:</string>
+    <string name="voltage">Voltaje:</string>
+    <string name="chasisSerial">Serie Chasis:</string>
+    <string name="motorSerial">Serie Motor:</string>
+    <string name="usedMaterials">Materiales utilizados</string>
+    <string name="requestMaterials">Solicitar Materiales</string>
+</resources>
