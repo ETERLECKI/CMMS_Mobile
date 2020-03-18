@@ -8,4 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="btn_filter_tareas">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/filter_btn_tareas_mh</item>
+        <item name="android:layout_marginLeft">@dimen/filter_btn_tareas_mh</item>
+        <item name="android:paddingRight">@dimen/filter_btn_tareas_ph</item>
+        <item name="android:paddingLeft">@dimen/filter_btn_tareas_ph</item>
+        <item name="android:paddingTop">@dimen/filter_btn_tareas_pv</item>
+        <item name="android:paddingBottom">@dimen/filter_btn_tareas_pv</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/filter_btn_selected</item>
+    </style>
 </resources>
